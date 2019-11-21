@@ -1,0 +1,48 @@
+1.
+	Products:
+		- name, productid, price, quantity
+
+	Customers
+		- Name, address, customerid, phone, payment info
+
+	Relationship:
+		- Buy: date time, quantity, price, tax, total cost, customer, product
+
+	Products(productid, name, price, quantity)
+	Customers(customerid, name, address, phone, payment info)
+	Purchase(purchaseid, customerid, productid, date, quantity, price, tax, total cost)
+
+2.
+	CREATE TABLE customers ('customerid' INTEGER, 'name' TEXT, 'address' TEXT, 'phone' INTEGER);
+	CREATE TABLE products ('productid' INTEGER, 'name' TEXT, 'price' REAL, 'quantity' INTEGER, PRIMARY KEY('productid'));
+	CREATE TABLE purchases ('purchaseid' INTEGER, 'customerid' INTEGER, 'productid' INTEGER, 'date' TEXT, 'quantity' INTEGER, 'price' REAL, 'tax' REAL, 'total_cost' REAL, PRIMARY KEY('purchaseid'))
+
+3.
+	INSERT INTO products VALUES
+		(1,1,'Apple',0.99,110),
+		(2,2,'Orange',0.95,7),
+		(3,3,'Banana',0.95,7),
+		(4,4,'Banana Peel',0.50,5),
+		(5,5,'Sandwich',1.05,10),
+		(6,6,'Turkey',1.00,11),
+		(7,7,'Green',2.00,4),
+		(8,8,'Blue',1.95,7)
+
+	INSERT INTO customers VALUES
+		(1,'Mary','1 Mary Lane','555-255-5525'),
+		(2,'Dave','2 Mary Lane','525-862-1437'),
+		(3,'David','5 Mary Lane','553-047-2845'),
+		(4,'Jane','8 Mary Lane','444-047-6777'),
+		(5,'John','9 Mary Lane','345-333-2323')
+
+	INSERT INTO purchases VALUES
+		( 1,2,4,'9/10/2019',7,3.50,0.91,4.41),
+		( 2,1,1,'9/15/2019',1,0.99,0.09,1.08),
+		( 3,3,8,'8/10/2019',1,1.95,0.19,2.14),
+		( 4,5,1,'4/14/2019',1,0.99,0.09,1.08),
+		( 5,2,4,'7/10/2019',7,3.50,0.91,4.41),
+		( 6,4,8,'2/31/2019',1,1.95,0.19,2.14),
+		( 7,5,6,'7/04/2019',1,1.00,0.11,1.11),
+		( 8,1,3,'8/19/2019',1,1.95,0.19,2.14),
+		( 9,2,6,'2/14/2019',1,1.00,0.11,1.11),
+		(10,3,8,'6/26/2019',1,1.95,0.19,2.14)

@@ -1,0 +1,47 @@
+1.
+	common case:
+		Name: Adding a new purchase into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Product" on main screen	| 	 2.	Display "Add Product" screen
+			3. Input data then click "Add" button	|	 4. Send new data to server, then display "Added Product Successfully" screen
+			5. Click on "ok" button					|	 6. Display "Add Product" screen
+	exception case:
+		Name: Adding a new product into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Product" on main screen	| 	 2.	Display "Add Product" screen
+			3. Input data then click "Add" button	|	 4. Send new data to server, then display "Error Adding Product" screen
+			5. Click on "ok" button					|	 6. Display "Add Product" screen
+2.
+	common case:
+		Name: Adding a new customer into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Customer" on main screen	| 	 2.	Display "Add Customer" screen
+			3. Input data then click "Add" button	|	 4. Send new data to server, then display "Added Customer Successfully" screen
+			5. Click on "ok" button					|	 6. Display "Add Customer" screen
+	exception case:
+		Name: Adding a new customer into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Customer" on main screen	| 	 2.	Display "Add Customer" screen
+			3. Input data then click "Add" button	|	 4. Send new data to server, then display "Error Adding Customer" screen
+			5. Click on "ok" button					|	 6. Display "Add Customer" screen
+3.
+	common case:
+		Name: Adding a new purchase into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Purchase" on main screen	| 	 2.	Display "Add Purchase" screen
+			3. Input data							|	 4. Load customer data and product data from server as their ids are inputted
+			5. Click the "Add" button				|	 6. Send new data to server, then display "Added Purchase Successfully" screen
+			7. Click on "ok" button					|	 8. Display "Add Purchase" screen
+	exception case:
+		Name: Adding a new purchase into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Purchase" on main screen	| 	 2.	Display "Add Purchase" screen
+			3. Input data							|	 4. Load customer data and product data from server as their ids are inputted
+			5. Click the "Add" button				|	 6. Send new data to server, then display "Error adding purchase" screen
+			7. Click on "ok" button					|	 8. Display "Add Purchase" screen
